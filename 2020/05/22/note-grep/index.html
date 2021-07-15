@@ -20,14 +20,19 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Philoveritas">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="group OR 操作\| 符号1grep &#39;pattern_1\|patter_2&#39; target_file  正则选项&#x2F;-E1grep -E &#39;pattern_1|patter_2&#39; target_file  egrep1egrep &#39;pattern_1|patter_2&#39; target_file  -e 选项1grep -e &#39;patter_1&#39; -e &#39;patter_2&#39; target_f">
+<meta property="og:type" content="article">
+<meta property="og:title" content="note-grep">
+<meta property="og:url" content="http://yoursite.com/2020/05/22/note-grep/index.html">
 <meta property="og:site_name" content="Philoveritas">
+<meta property="og:description" content="group OR 操作\| 符号1grep &#39;pattern_1\|patter_2&#39; target_file  正则选项&#x2F;-E1grep -E &#39;pattern_1|patter_2&#39; target_file  egrep1egrep &#39;pattern_1|patter_2&#39; target_file  -e 选项1grep -e &#39;patter_1&#39; -e &#39;patter_2&#39; target_f">
+<meta property="article:published_time" content="2020-05-22T02:54:45.000Z">
+<meta property="article:modified_time" content="2020-05-22T03:13:42.716Z">
 <meta property="article:author" content="Philoveritas">
+<meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/archives/">
+<link rel="canonical" href="http://yoursite.com/2020/05/22/note-grep/">
 
 
 <script id="page-configurations">
@@ -35,12 +40,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-Hans'
   };
 </script>
 
-  <title>Archive | Philoveritas</title>
+  <title>note-grep | Philoveritas</title>
   
 
 
@@ -163,72 +168,95 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post">
             
 
+  <div class="posts-expand">
+      
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 2 posts in total. Keep on posting.</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/22/note-grep/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/deer.png">
+      <meta itemprop="name" content="Philoveritas">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Philoveritas">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          note-grep
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-05-22 10:54:45 / Modified: 11:13:42" itemprop="dateCreated datePublished" datetime="2020-05-22T10:54:45+08:00">2020-05-22</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
+        <h2 id="group-OR-操作"><a href="#group-OR-操作" class="headerlink" title="group OR 操作"></a>group OR 操作</h2><h3 id="符号"><a href="#符号" class="headerlink" title="\| 符号"></a>\| 符号</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep 'pattern_1\|patter_2' target_file</span><br></pre></td></tr></table></figure>
+
+<h3 id="正则选项-E"><a href="#正则选项-E" class="headerlink" title="正则选项/-E"></a>正则选项/-E</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep -E 'pattern_1|patter_2' target_file</span><br></pre></td></tr></table></figure>
+
+<h3 id="egrep"><a href="#egrep" class="headerlink" title="egrep"></a>egrep</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">egrep 'pattern_1|patter_2' target_file</span><br></pre></td></tr></table></figure>
+
+<h3 id="e-选项"><a href="#e-选项" class="headerlink" title="-e 选项"></a>-e 选项</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep -e 'patter_1' -e 'patter_2' target_file</span><br></pre></td></tr></table></figure>
+
+<h2 id="group-AND-操作"><a href="#group-AND-操作" class="headerlink" title="group AND 操作"></a>group AND 操作</h2><h3 id="正则选项-E-1"><a href="#正则选项-E-1" class="headerlink" title="正则选项/-E"></a>正则选项/-E</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep -E 'pattern_1.*patter_2' target_file</span><br></pre></td></tr></table></figure>
+
+<h3 id="管道符号"><a href="#管道符号" class="headerlink" title="| 管道符号"></a>| 管道符号</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep -E 'pattern_1' target_file | -E 'patter_2'</span><br></pre></td></tr></table></figure>
+
+<h2 id="group-Not-操作"><a href="#group-Not-操作" class="headerlink" title="group Not 操作"></a>group Not 操作</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep -v 'pattern_1' target_file</span><br></pre></td></tr></table></figure>
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-22T10:54:45+08:00"
-              content="2020-05-22">
-          05-22
-        </time>
-      </div>
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag"># 笔记</a>
+          </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/05/22/note-grep/" itemprop="url">
-            <span itemprop="name">note-grep</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-28T10:00:00+08:00"
-              content="2020-03-28">
-          03-28
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/03/28/Alea-iacta-est/" itemprop="url">
-            <span itemprop="name">Alea iacta est.</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
+        
 
 
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/28/Alea-iacta-est/" rel="prev" title="Alea iacta est.">
+      <i class="fa fa-chevron-left"></i> Alea iacta est.
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
@@ -279,6 +307,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#group-OR-操作"><span class="nav-number">1.</span> <span class="nav-text">group OR 操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#符号"><span class="nav-number">1.1.</span> <span class="nav-text">\| 符号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#正则选项-E"><span class="nav-number">1.2.</span> <span class="nav-text">正则选项&#x2F;-E</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#egrep"><span class="nav-number">1.3.</span> <span class="nav-text">egrep</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#e-选项"><span class="nav-number">1.4.</span> <span class="nav-text">-e 选项</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#group-AND-操作"><span class="nav-number">2.</span> <span class="nav-text">group AND 操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#正则选项-E-1"><span class="nav-number">2.1.</span> <span class="nav-text">正则选项&#x2F;-E</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#管道符号"><span class="nav-number">2.2.</span> <span class="nav-text">| 管道符号</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#group-Not-操作"><span class="nav-number">3.</span> <span class="nav-text">group Not 操作</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
